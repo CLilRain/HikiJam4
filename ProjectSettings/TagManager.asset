@@ -14,8 +14,8 @@ TagManager:
   - Player
   - Cloud
   - Terrain
-  - 
-  - 
+  - PostEffect
+  - NoPostEffect
   - 
   - 
   - 

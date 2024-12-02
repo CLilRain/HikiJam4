@@ -62,10 +62,10 @@ public class PlayerController : MonoBehaviour
     {
         playerMove.Disable();
         state = PlayerMode.Plane;
-        transform.position = plane.cockpit.position;
-        transform.parent = plane.cockpit.parent;
+        //transform.position = plane.cockpit.position;
+        //transform.parent = plane.cockpit.parent;
 
-        plane.PlayerEnters(this);
+        //plane.PlayerEnters(this);
     }
 
     public void ExitPlane()
