@@ -1,3 +1,5 @@
+using Collectable;
+using Palmmedia.ReportGenerator.Core;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,7 +21,7 @@ public class PlayerController : MonoBehaviour
     public int HP;
 
     float cooldownTimer;
-
+    int essence;
     AbilityManager abiilties;
     PlayerMode state;
 
@@ -58,6 +60,8 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    #region Airplane
+
     public void EnterPlane(Plane plane)
     {
         playerMove.Disable();
@@ -77,4 +81,44 @@ public class PlayerController : MonoBehaviour
         transform.rotation = Quaternion.Euler(0f, transform.rotation.eulerAngles.y, 0f);
 
     }
+
+    #endregion
+
+
+    #region Collision
+    private void OnTriggerEnter(Collider other)
+    {
+        if (IsCollectable(other))
+        {
+            var script = other.GetComponent<ICollectable>();
+
+            if (script != null)
+            {
+                script.OnCollect(this);
+                Debug.Log("hits essence");
+            }
+            else
+            {
+                Debug.Log("hit object is not collectable");
+            }
+        }
+    }
+
+    public void CollectEssence()
+    {
+        essence++;
+        UpdateCoinScore();
+    }
+
+    private void UpdateCoinScore()
+    {
+        UIManager.Instance.SetEssence(essence);
+    }
+
+    private bool IsCollectable(Collider other)
+    {
+        return (1 << other.gameObject.layer) == GameSettings.Instance.collectableLayer;
+    }
+
+    #endregion
 }
