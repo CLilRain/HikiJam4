@@ -7,7 +7,8 @@ public class GameSettings : MonoBehaviour
 
     public static GameSettings Instance;
 
-    public LayerMask collectableLayer;
+    public LayerMask interactableLayer;
+    public LayerMask playerWeaponLayer;
 
 
     private void Awake()
@@ -15,13 +16,11 @@ public class GameSettings : MonoBehaviour
         Instance = this;
     }
 
-    // Use this for initialization
     void Start()
     {
 
     }
 
-    // Update is called once per frame
     void Update()
     {
 

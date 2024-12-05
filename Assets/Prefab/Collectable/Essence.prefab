@@ -177,7 +177,8 @@ GameObject:
   - component: {fileID: 8360419041214323337}
   - component: {fileID: 4424046218102721755}
   - component: {fileID: 4248641852679507535}
-  - component: {fileID: 5385198273435274591}
+  - component: {fileID: 3552293470217394134}
+  - component: {fileID: 2323708999241245793}
   m_Layer: 11
   m_Name: Essence
   m_TagString: Untagged
@@ -235,7 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2adb7b9dc51f6324fbbbcdfb120f0bc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5385198273435274591
+--- !u!114 &3552293470217394134
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -244,6 +245,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 7946864504894212813}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27fa609126b7f364a8f0eee7de00fd4c, type: 3}
+  m_Script: {fileID: 11500000, guid: c73399495fee664428bea2d8e645b77b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInteractionReceiver: {fileID: 2323708999241245793}
+--- !u!114 &2323708999241245793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7946864504894212813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f799b0c1120cb1499edf93542e61943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Essence
+  interactionDetectorCollider: {fileID: 4424046218102721755}
