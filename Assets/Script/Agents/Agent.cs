@@ -8,10 +8,8 @@ public abstract class Agent : MonoBehaviour
     protected PlayerHand playerHand;
 
 
-    public virtual void ReceiveDamage(Agent attacker, int damage)
-    {
-
-    }
+    public virtual void ReceiveDamage(Agent attacker, int damage) {}
+    public virtual void CollectEssence() {}
 
     public void PickUpWeapon(Weapon weapon)
     {
@@ -19,5 +17,4 @@ public abstract class Agent : MonoBehaviour
 
         playerHand.AssignWeapon(weapon);
     }
-
 }

@@ -70,21 +70,6 @@ public class PlayerController : Agent
         }
     }
 
-    private void DetectItem()
-    {
-        eyeDetector.DetectItem();
-        if (eyeDetector.hasFoundObject)
-        {
-            eyeDetector.foundObject.OnDetection();
-
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                eyeDetector.foundObject.Interact(this);
-            }
-        }
-    }
-
-
     #region Airplane
 
     public void EnterPlane(Plane plane)
@@ -110,27 +95,36 @@ public class PlayerController : Agent
     #endregion
 
 
-    #region Collision
-    private void OnTriggerEnter(Collider other)
-    {
-        if (IsInteractable(other))
-        {
-            var interactable = other.GetComponent<DetectionReceiver>();
+    #region Item interaction
 
-            if (interactable != null)
+    private void DetectItem()
+    {
+        eyeDetector.DetectItem();
+        if (eyeDetector.hasFoundObject)
+        {
+            eyeDetector.foundObject.OnDetection();
+
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                switch (interactable.GetCollectableType())
-                {
-                    case InteractableTypes.Pickup:
-                        Debug.Log("Player trigger entered Pickup " + other.name, gameObject);
-                        interactable.Interact(this);
-                        break;
-                }
+                eyeDetector.foundObject.Interact(this);
             }
         }
     }
 
-    public void CollectEssence()
+    private void OnTriggerEnter(Collider other)
+    {
+        if (IsInteractable(other))
+        {
+            var interactable = other.GetComponent<Interactable>();
+
+            if (interactable != null)
+            {
+                interactable.OnCollision(this);
+            }
+        }
+    }
+
+    public override void CollectEssence()
     {
         essence++;
         UpdateCoinScore();

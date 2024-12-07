@@ -6,7 +6,7 @@ public abstract class Weapon : MonoBehaviour
     int attackDamage;
 
     [SerializeField]
-    private DetectionReceiver playerInteractionReceiver;
+    private Interactable playerInteractionReceiver;
 
     [SerializeField]
     InteractableTypes interactableType = InteractableTypes.Weapon;

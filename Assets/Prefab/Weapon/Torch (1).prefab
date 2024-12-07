@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 576462313695273097}
   - component: {fileID: 1613668017588881574}
   - component: {fileID: 2722460253027664821}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: TorchPfx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4851,74 +4851,6 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!1 &2758873850175483709
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8233051382601823006}
-  - component: {fileID: 732247277912786052}
-  - component: {fileID: 3759502171960917880}
-  m_Layer: 12
-  m_Name: Detector
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8233051382601823006
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2758873850175483709}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5908879899047479647}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &732247277912786052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2758873850175483709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f799b0c1120cb1499edf93542e61943, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectName: Torch
-  interactionDetectorCollider: {fileID: 3759502171960917880}
---- !u!65 &3759502171960917880
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2758873850175483709}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.8, y: 0.8, z: 0.8}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3960843686579020250
 GameObject:
   m_ObjectHideFlags: 0
@@ -4930,7 +4862,7 @@ GameObject:
   - component: {fileID: 4572855462271459328}
   - component: {fileID: 1615464720873410940}
   - component: {fileID: 5616668772428658403}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5013,7 +4945,7 @@ GameObject:
   - component: {fileID: 3105674675002635348}
   - component: {fileID: 1675070592501129220}
   - component: {fileID: 5823418754832525594}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: Tip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5094,10 +5026,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5908879899047479647}
-  - component: {fileID: 3407464492103884083}
   - component: {fileID: 8304784494380400714}
-  - component: {fileID: 6479403695517424415}
-  m_Layer: 12
+  - component: {fileID: 121363832888698090}
+  - component: {fileID: 1482143750202067853}
+  m_Layer: 11
   m_Name: Torch (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5112,7 +5044,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7316132825019721660}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.13052584, y: 0.0013389345, z: -0.00017627375, w: 0.99144405}
+  m_LocalRotation: {x: -0.13052662, y: 0.0013376024, z: -0.00017253177, w: 0.9914439}
   m_LocalPosition: {x: 6.01, y: -0.06, z: -1.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5120,30 +5052,8 @@ Transform:
   - {fileID: 4572855462271459328}
   - {fileID: 576462313695273097}
   - {fileID: 3105674675002635348}
-  - {fileID: 8233051382601823006}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -15, y: 0.005, z: -0.041}
---- !u!65 &3407464492103884083
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7316132825019721660}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.2, y: 0.8, z: 0.2}
-  m_Center: {x: 0, y: 0.1, z: 0}
+  m_LocalEulerAnglesHint: {x: -15, y: 0.16, z: -0.041}
 --- !u!54 &8304784494380400714
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5171,7 +5081,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &6479403695517424415
+--- !u!65 &121363832888698090
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7316132825019721660}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.8, y: 0.8, z: 0.8}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1482143750202067853
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5180,17 +5111,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7316132825019721660}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: debbb20d31b4e6048a46f71045ea9b79, type: 3}
+  m_Script: {fileID: 11500000, guid: e4526443ddca6e043bddd63c37bacd50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDamage: 0
-  playerInteractionReceiver: {fileID: 732247277912786052}
-  interactableType: 1
-  torchTipRenderer: {fileID: 5823418754832525594}
-  particles: {fileID: 1613668017588881574}
-  litColor: {r: 0.93333334, g: 0.8901961, b: 0.74509805, a: 1}
-  dimColor: {r: 0.22745098, g: 0.11764706, b: 0.09411765, a: 1}
-  maxFlameCharge: 60
-  chargeLossPerSecond: 1
-  maxPfxSize: 0.1
-  minPfxSize: 0.02
+  objectName: Torch

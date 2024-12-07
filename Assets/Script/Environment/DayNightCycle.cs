@@ -36,12 +36,11 @@ public class DayNightCycle : MonoBehaviour
         {
             timer += Time.deltaTime * currentSpeed;
             SetValue(timer);
-        }
 
-        if (timer >= 1f)
-        {
-            timer -= 1f;
-            currentSpeed = normalSpeed;
+            if (timer >= 1f)
+            {
+                timer -= 1f;
+            }
         }
     }
 

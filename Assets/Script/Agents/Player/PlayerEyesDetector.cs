@@ -5,7 +5,7 @@ public class PlayerEyesDetector : MonoBehaviour
     public LayerMask layerMask;
     public float detectionRange = 5f;
 
-    public DetectionReceiver foundObject { get; private set; }
+    public Interactable foundObject { get; private set; }
     public bool hasFoundObject { get; private set; } = false;
 
     public void DetectItem()
@@ -17,12 +17,12 @@ public class PlayerEyesDetector : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, detectionRange, layerMask))
         {
-            Debug.DrawLine(transform.position, hit.transform.position, Color.yellow);
+            Debug.DrawLine(transform.position, hit.transform.position, Color.red);
 
             Collider collider = hit.collider;
             if (collider != null)
             {
-                var receiver = collider.GetComponent<DetectionReceiver>();
+                var receiver = collider.GetComponent<Interactable>();
                 if (receiver != null)
                 {
                     hasFoundObject = true;

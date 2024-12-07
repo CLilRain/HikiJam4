@@ -4,7 +4,7 @@ using UnityEngine;
 public class Essence : MonoBehaviour
 {
     [SerializeField]
-    private DetectionReceiver playerInteractionReceiver;
+    private Interactable playerInteractionReceiver;
 
     void Awake()
     {
@@ -17,9 +17,9 @@ public class Essence : MonoBehaviour
         playerInteractionReceiver.OnInteraction -= Interact;
     }
 
-    private void Interact(PlayerController player)
+    private void Interact(Agent agent)
     {
-        player.CollectEssence();
+        agent.CollectEssence();
 
         Destroy(gameObject);
     }
