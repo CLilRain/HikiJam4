@@ -20,6 +20,7 @@ public class PlayerController : Agent
     [Header("Movement")]
     [SerializeField]
     private FirstPersonMovement playerMove;
+
     [SerializeField]
     private FirstPersonLook playerLook;
 

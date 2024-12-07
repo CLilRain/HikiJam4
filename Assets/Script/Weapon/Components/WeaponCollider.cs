@@ -22,12 +22,13 @@ public class WeaponCollider : MonoBehaviour
     {
         if (GameSettings.Instance.interactableLayer.Contains(other.gameObject))
         {
-            var interactor = other.GetComponent<DamageReceiver>();
+            Debug.Log($"{owner.name}'s weapon hits {other.name}");
+            //var interactor = other.GetComponent<DamageReceiver>();
 
-            if (interactor != null && interactor.Owner != owner)
-            {
-                interactor.ReceiveDamage(owner, weapon.AttackDamage);
-            }
+            //if (interactor != null && interactor.Owner != owner)
+            //{
+            //    interactor.ReceiveDamage(owner, weapon.AttackDamage);
+            //}
         }
     }
 }

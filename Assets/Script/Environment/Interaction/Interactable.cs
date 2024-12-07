@@ -18,9 +18,11 @@ public class Interactable : MonoBehaviour
 
     private Collider interactionDetectorCollider;
 
-    public event Action<Agent> OnInteraction;
-    public bool IsInteractable { get; private set; } = true;
+    // Event is used when an interactable object cannot neatly inherit from this class.
     protected bool HasSubscriber => OnInteraction != null;
+    public event Action<Agent> OnInteraction;
+
+    public bool IsInteractable { get; private set; } = true;
     public InteractableTypes GetCollectableType() => InteractableTypes.Pickup;
 
     private void Awake()

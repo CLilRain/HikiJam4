@@ -52,11 +52,14 @@ public class FirstPersonMovement : MonoBehaviour
             targetMovingSpeed = speedOverrides[speedOverrides.Count - 1]();
         }
 
-        Vector2 targetVelocity = new Vector2(Input.GetAxis("Horizontal") * targetMovingSpeed, Input.GetAxis("Vertical") * targetMovingSpeed);
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
+
+        Vector2 targetVelocity = new Vector2(x * targetMovingSpeed, z * targetMovingSpeed);
 
         rb.velocity = transform.rotation * new Vector3(targetVelocity.x, rb.velocity.y, targetVelocity.y);
-        meshAnimator.SetFloat("X", rb.velocity.x);
-        meshAnimator.SetFloat("Z", rb.velocity.z);
+        meshAnimator.SetFloat("X", x);
+        meshAnimator.SetFloat("Z", z);
     }
 
     public void Enable()

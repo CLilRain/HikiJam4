@@ -40,6 +40,7 @@ public abstract class Weapon : MonoBehaviour
     public virtual void OnDrop()
     {
         owner = null;
+        playerInteractionReceiver.EnableInteraction();
 
         // TODO: leaves player body
     }
