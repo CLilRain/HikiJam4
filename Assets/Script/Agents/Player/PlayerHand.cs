@@ -4,8 +4,9 @@ using UnityEngine;
 public class PlayerHand : MonoBehaviour
 {
     public Transform handRoot;
+
+    public Transform targetRotateReference;
     public float rotationSpeed;
-    public Vector3 strikeRotationEuler;
 
     Weapon activeWeapon;
 
@@ -18,7 +19,7 @@ public class PlayerHand : MonoBehaviour
     void Awake()
     {
         originalRot = handRoot.localRotation;
-        strikeRot = Quaternion.Euler(strikeRotationEuler);
+        strikeRot = targetRotateReference.rotation;
 
         targetRotation = originalRot;
     }

@@ -1,46 +1,32 @@
 ﻿using UnityEngine;
 
-public abstract class Weapon : MonoBehaviour
+public abstract class Weapon : Interactable
 {
     [SerializeField]
-    int attackDamage;
+    protected int attackDamage;
 
     [SerializeField]
-    private Interactable playerInteractionReceiver;
+    protected Collider damageCollider;
 
-    [SerializeField]
-    InteractableTypes interactableType = InteractableTypes.Weapon;
-
-    Agent owner;
+    protected Agent owner;
 
     public int AttackDamage => attackDamage;
-
-    private void Awake()
-    {
-        playerInteractionReceiver.OnInteraction -= OnPickUp;
-        playerInteractionReceiver.OnInteraction += OnPickUp;
-    }
-
-    private void OnEnable()
-    {
-        playerInteractionReceiver.OnInteraction -= OnPickUp;
-        playerInteractionReceiver.OnInteraction += OnPickUp;
-    }
 
     // Pickup
     public virtual void OnPickUp(Agent owner)
     {
         this.owner = owner;
 
-        owner.PickUpWeapon(this);
-        playerInteractionReceiver.DisableInteraction();
+        // TODO: Change gameobject layer to weapons layer
+
+        DisablePickupInteraction();
         //EnableEffect();
     }
 
     public virtual void OnDrop()
     {
         owner = null;
-        playerInteractionReceiver.EnableInteraction();
+        EnablePickupInteraction();
 
         // TODO: leaves player body
     }
@@ -54,13 +40,13 @@ public abstract class Weapon : MonoBehaviour
     {
     }
 
-    // Effect
-    public virtual void EnableEffect()
+    public virtual void Enable(Agent owner)
     {
+        this.owner = owner;
     }
 
-    public virtual void DisableEffect()
+    public virtual void Disable()
     {
+        owner = null;
     }
-
 }

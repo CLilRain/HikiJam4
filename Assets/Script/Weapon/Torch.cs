@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using UnityEngine;
-using static UnityEngine.ParticleSystem;
 
 public class Torch : Weapon
 {
@@ -32,13 +31,14 @@ public class Torch : Weapon
     [SerializeField]
     private float minPfxSize;
 
-    MainModule mainModule;
+    ParticleSystem.MainModule mainModule;
     Material tornMaterial;
     float flameCharge;
     bool isActive;
 
-    void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         tornMaterial = torchTipRenderer.material;
         mainModule = particles.main;
     }
@@ -53,35 +53,31 @@ public class Torch : Weapon
             if (flameCharge <= Mathf.Epsilon)
             {
                 flameCharge = 0f;
-                DisableEffect();
+                Disable();
             }
         }
     }
 
-    public override void DisableEffect()
+    public override void Enable(Agent owner)
     {
-        SetLitAmount(0f);
-
-        isActive = false;
-        particles.Stop();
-        torchTipRenderer.enabled = false;
+        this.owner = owner;
     }
 
-    public override void EnableEffect()
+    public override void Disable()
     {
-        isActive = true;
-        particles.Play();
-        torchTipRenderer.enabled = true;
-
-        flameCharge = maxFlameCharge;
+        owner = null;
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (GameSettings.Instance.playerWeaponLayer.Contains(other.gameObject))
         {
-            EnableEffect();
         }
+    }
+
+    public void FullyRecharge()
+    {
+        SetLitAmount(1f);
     }
 
     void SetLitAmount(float percent)
@@ -89,5 +85,11 @@ public class Torch : Weapon
         tornMaterial.color = Color.Lerp(dimColor, litColor, percent);
 
         mainModule.startSize = Mathf.Lerp(minPfxSize, maxPfxSize, percent);
+    }
+
+    public override void Interact(Agent player)
+    {
+        base.Interact(player);
+        player.PickUpWeapon(this);
     }
 }

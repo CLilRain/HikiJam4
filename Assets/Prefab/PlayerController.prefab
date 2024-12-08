@@ -175,6 +175,7 @@ GameObject:
   - component: {fileID: 5339930866657721926}
   - component: {fileID: 1848317995291369381}
   - component: {fileID: 1599829305262654472}
+  - component: {fileID: 7897537450577784502}
   m_Layer: 6
   m_Name: PlayerController
   m_TagString: Untagged
@@ -190,7 +191,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 939334196472793352}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.001350488, z: -0, w: 0.9999991}
+  m_LocalRotation: {x: 0, y: 0.0013526253, z: 0, w: 0.9999991}
   m_LocalPosition: {x: 0.561, y: -0.28, z: -2.299}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -265,8 +266,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0132279d8aef373499a44a211035cf4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agentName: Unassgined name
-  playerHand: {fileID: 0}
+  agentName: Hiki Worth V
+  playerHand: {fileID: 7897537450577784502}
   eyeDetector: {fileID: 6956968577539855132}
   playerMove: {fileID: 5339930866657721926}
   playerLook: {fileID: 428499578881121575}
@@ -284,9 +285,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meshAnimator: {fileID: 5594814469445396314}
-  jump: {fileID: 0}
-  GroundCheck: {fileID: 0}
-  crouch: {fileID: 0}
+  jump: {fileID: 1848317995291369381}
+  crouch: {fileID: 1599829305262654472}
   speed: 5
   canRun: 1
   runSpeed: 9
@@ -323,6 +323,21 @@ MonoBehaviour:
   headToLower: {fileID: 3216072966359353418}
   crouchYHeadPosition: 1
   colliderToLower: {fileID: 3497043337777810034}
+--- !u!114 &7897537450577784502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939334196472793352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c50ac2aa9281ef147a527437983fe21e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handRoot: {fileID: 5045008605000712095}
+  targetRotateReference: {fileID: 0}
+  rotationSpeed: 0
 --- !u!1 &1254561358555888427
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,9 +362,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1254561358555888427}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.06383427, y: 0.19735134, z: 0.71402735, w: 0.66868716}
+  m_LocalRotation: {x: -0.14624575, y: 0.10735592, z: 0.73275155, w: 0.6558675}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009791116, y: 0.009791124, z: 0.009791115}
+  m_LocalScale: {x: 0.009791115, y: 0.009791122, z: 0.009791118}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1830757673472871186}
@@ -2223,6 +2238,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3651168892318532048, guid: 7c994d1fd5f0c2a49a1367a47e2a8401, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d9dee9a291e9eb54fae2466bd5c1dfed, type: 2}
     - target: {fileID: 919132149155446097, guid: 7c994d1fd5f0c2a49a1367a47e2a8401, type: 3}
       propertyPath: m_Name
       value: SHV

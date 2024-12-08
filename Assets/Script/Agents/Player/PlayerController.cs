@@ -2,6 +2,7 @@ using Palmmedia.ReportGenerator.Core;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 
 public enum PlayerMode
 {
@@ -129,6 +130,27 @@ public class PlayerController : Agent
     {
         essence++;
         UpdateCoinScore();
+    }
+
+    public void InteractsWithCampfire()
+    {
+        if (playerHand.ActiveWeapon != null)
+        {
+            var torch = (Torch)playerHand.ActiveWeapon;
+            if (torch != null)
+            {
+                torch.FullyRecharge();
+                Debug.Log("Torch fully recharged");
+            }
+            else
+            {
+                Debug.Log("Player does not have torch");
+            }
+        }
+        else
+        {
+            Debug.Log("Player has not active weapon.");
+        }
     }
 
     private void UpdateCoinScore()

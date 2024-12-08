@@ -81,10 +81,10 @@ MonoBehaviour:
   MaxHealth: 100
   interactableLayer:
     serializedVersion: 2
-    m_Bits: 6144
+    m_Bits: 14336
   playerWeaponLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8192
 --- !u!1 &6255005748820076310
 GameObject:
   m_ObjectHideFlags: 0

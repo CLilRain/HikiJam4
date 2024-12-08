@@ -7,11 +7,9 @@ public class FirstPersonMovement : MonoBehaviour
     [SerializeField]
     private Animator meshAnimator;
 
-
     [SerializeField]
     private Jump jump;
-    [SerializeField]
-    private GroundCheck GroundCheck;
+
     [SerializeField]
     private Crouch crouch;
 

@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 2292441713443254481}
   serializedVersion: 2
   m_LocalRotation: {x: 0.13052586, y: -0.0013389345, z: 0.00017627378, w: 0.99144405}
-  m_LocalPosition: {x: 0, y: 0.27945665, z: -0.0141074285}
+  m_LocalPosition: {x: 0, y: 0.558, z: -0.014}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4878,7 +4878,7 @@ Transform:
   m_GameObject: {fileID: 3960843686579020250}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.279, z: 0}
   m_LocalScale: {x: 0.10434559, y: 0.5217279, z: 0.10434558}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4961,7 +4961,7 @@ Transform:
   m_GameObject: {fileID: 4157997637738290490}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.27651578, z: 0}
+  m_LocalPosition: {x: 0, y: 0.556, z: -0}
   m_LocalScale: {x: 0.10434559, y: 0.028983848, z: 0.10434558}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5028,7 +5028,7 @@ GameObject:
   - component: {fileID: 5908879899047479647}
   - component: {fileID: 8304784494380400714}
   - component: {fileID: 121363832888698090}
-  - component: {fileID: 1482143750202067853}
+  - component: {fileID: 1508675206655733053}
   m_Layer: 11
   m_Name: Torch (1)
   m_TagString: Untagged
@@ -5102,7 +5102,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.8, y: 0.8, z: 0.8}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1482143750202067853
+--- !u!114 &1508675206655733053
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5111,7 +5111,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 7316132825019721660}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4526443ddca6e043bddd63c37bacd50, type: 3}
+  m_Script: {fileID: 11500000, guid: debbb20d31b4e6048a46f71045ea9b79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: Torch
+  attackDamage: 0
+  interactableType: 1
+  torchTipRenderer: {fileID: 5823418754832525594}
+  particles: {fileID: 1613668017588881574}
+  litColor: {r: 1, g: 0.9081808, b: 0.4575472, a: 1}
+  dimColor: {r: 0.3962264, g: 0.2684564, b: 0.12148452, a: 1}
+  maxFlameCharge: 60
+  chargeLossPerSecond: 1
+  maxPfxSize: 0.1
+  minPfxSize: 0.02

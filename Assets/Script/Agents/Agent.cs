@@ -18,5 +18,6 @@ public abstract class Agent : MonoBehaviour
         // TODO: Inventory processing
 
         playerHand.AssignWeapon(weapon);
+        weapon.OnPickUp(this);
     }
 }

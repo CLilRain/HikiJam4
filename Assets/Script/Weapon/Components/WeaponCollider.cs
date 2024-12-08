@@ -6,17 +6,7 @@ public class WeaponCollider : MonoBehaviour
 
     private Weapon weapon;
 
-    public void Enable(Agent owner, Weapon weapon)
-    {
-        this.owner = owner;
-        this.weapon = weapon;
-    }
 
-    public void Disable()
-    {
-        owner = null;
-        weapon = null;
-    }
 
     private void OnTriggerEnter(Collider other)
     {

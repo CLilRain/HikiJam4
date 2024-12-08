@@ -17,7 +17,7 @@ public class AbilityManager : MonoBehaviour
 
     private void Update()
     {
-        ghostCloud.rotation = Quaternion.identity;
+        //ghostCloud.rotation = Quaternion.identity;
     }
 
 
