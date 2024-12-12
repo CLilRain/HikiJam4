@@ -1,0 +1,1212 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1528191100531558143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 527146260202898411}
+  m_Layer: 0
+  m_Name: Island Cluster Medium
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &527146260202898411
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528191100531558143}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.75, y: 0, z: 5.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5081615505824300267}
+  - {fileID: 3978634861698722587}
+  - {fileID: 3700644090316096538}
+  - {fileID: 8865127806121677702}
+  - {fileID: 5452120974545145303}
+  - {fileID: 2324835671000421881}
+  - {fileID: 5517387782683859851}
+  - {fileID: 3890879794446789843}
+  - {fileID: 2598865608911519109}
+  - {fileID: 8250409415757507753}
+  - {fileID: 3971797762691892783}
+  - {fileID: 7591778851751540257}
+  - {fileID: 7802107696673489320}
+  - {fileID: 2947643553485735134}
+  - {fileID: 8631818488326824026}
+  - {fileID: 2079361887054863883}
+  - {fileID: 6203250591907969664}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &151358298272272729
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 527146260202898411}
+    m_Modifications:
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.49999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.86602545
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803556800393703374, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_Name
+      value: Island Micro OCC 638
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+--- !u!4 &2324835671000421881 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+  m_PrefabInstance: {fileID: 151358298272272729}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &770924890530005118
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 527146260202898411}
+    m_Modifications:
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.8660254
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803556800393703374, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_Name
+      value: Island Micro (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+--- !u!4 &2947643553485735134 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+  m_PrefabInstance: {fileID: 770924890530005118}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2380277400492134123
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 527146260202898411}
+    m_Modifications:
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -11.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5337195764711048144, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_Name
+      value: Island Tiny Hip 43004
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+--- !u!4 &2598865608911519109 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+  m_PrefabInstance: {fileID: 2380277400492134123}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3523602309418442685
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 527146260202898411}
+    m_Modifications:
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.17364825
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9848078
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 160
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5337195764711048144, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_Name
+      value: Island Tiny Hj 454
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+--- !u!4 &3890879794446789843 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+  m_PrefabInstance: {fileID: 3523602309418442685}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3605094302091195713
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 527146260202898411}
+    m_Modifications:
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.8660254
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 240
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5337195764711048144, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_Name
+      value: Island Tiny 35 Cnc
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+--- !u!4 &3971797762691892783 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+  m_PrefabInstance: {fileID: 3605094302091195713}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3909726039314511732
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 527146260202898411}
+    m_Modifications:
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8660254
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5337195764711048144, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_Name
+      value: Island Tiny 40 Cnc
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+--- !u!4 &3700644090316096538 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+  m_PrefabInstance: {fileID: 3909726039314511732}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4111843070040629204
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 527146260202898411}
+    m_Modifications:
+    - target: {fileID: 1423011460693029524, guid: 2c0e8b4ef51f3fa449af87402cb9fc22, type: 3}
+      propertyPath: m_Name
+      value: Double Star Tiny Beta 585
+      objectReference: {fileID: 0}
+    - target: {fileID: 5435674163600683901, guid: 2c0e8b4ef51f3fa449af87402cb9fc22, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5435674163600683901, guid: 2c0e8b4ef51f3fa449af87402cb9fc22, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5435674163600683901, guid: 2c0e8b4ef51f3fa449af87402cb9fc22, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -19.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5435674163600683901, guid: 2c0e8b4ef51f3fa449af87402cb9fc22, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.64278764
+      objectReference: {fileID: 0}
+    - target: {fileID: 5435674163600683901, guid: 2c0e8b4ef51f3fa449af87402cb9fc22, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5435674163600683901, guid: 2c0e8b4ef51f3fa449af87402cb9fc22, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.76604444
+      objectReference: {fileID: 0}
+    - target: {fileID: 5435674163600683901, guid: 2c0e8b4ef51f3fa449af87402cb9fc22, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5435674163600683901, guid: 2c0e8b4ef51f3fa449af87402cb9fc22, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5435674163600683901, guid: 2c0e8b4ef51f3fa449af87402cb9fc22, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5435674163600683901, guid: 2c0e8b4ef51f3fa449af87402cb9fc22, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c0e8b4ef51f3fa449af87402cb9fc22, type: 3}
+--- !u!4 &8250409415757507753 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5435674163600683901, guid: 2c0e8b4ef51f3fa449af87402cb9fc22, type: 3}
+  m_PrefabInstance: {fileID: 4111843070040629204}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4504060001225317035
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 527146260202898411}
+    m_Modifications:
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.9848077
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.17364846
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 340
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803556800393703374, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_Name
+      value: Island Micro (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+--- !u!4 &2079361887054863883 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+  m_PrefabInstance: {fileID: 4504060001225317035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4872034215305744261
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 527146260202898411}
+    m_Modifications:
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9848078
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.17364816
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5337195764711048144, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_Name
+      value: Island Tiny Meleph
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+--- !u!4 &5081615505824300267 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+  m_PrefabInstance: {fileID: 4872034215305744261}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5298702510283598053
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 527146260202898411}
+    m_Modifications:
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.34202018
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9396927
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5337195764711048144, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_Name
+      value: Island Tiny 38 Cnc
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+--- !u!4 &5517387782683859851 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+  m_PrefabInstance: {fileID: 5298702510283598053}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5628485472954090760
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 527146260202898411}
+    m_Modifications:
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7660444
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6427877
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 280
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803556800393703374, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_Name
+      value: Island Micro
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+--- !u!4 &7802107696673489320 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+  m_PrefabInstance: {fileID: 5628485472954090760}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5670212304674193081
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 527146260202898411}
+    m_Modifications:
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.64278764
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.76604444
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5337195764711048144, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_Name
+      value: Island Tiny Ep Cnc
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+--- !u!4 &5452120974545145303 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+  m_PrefabInstance: {fileID: 5670212304674193081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6165607132330599674
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 527146260202898411}
+    m_Modifications:
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.9396926
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.34202027
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803556800393703374, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_Name
+      value: Island Micro (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+--- !u!4 &8631818488326824026 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+  m_PrefabInstance: {fileID: 6165607132330599674}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7800829990666634575
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 527146260202898411}
+    m_Modifications:
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.6427876
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7660445
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 260
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5337195764711048144, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_Name
+      value: Island Tiny BY Cnc
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+--- !u!4 &7591778851751540257 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+  m_PrefabInstance: {fileID: 7800829990666634575}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8380246350001307168
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 527146260202898411}
+    m_Modifications:
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803556800393703374, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+      propertyPath: m_Name
+      value: Island Micro (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+--- !u!4 &6203250591907969664 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2475504437975614624, guid: f4e1dbef4d2a1ff499263ff9ab814f3e, type: 3}
+  m_PrefabInstance: {fileID: 8380246350001307168}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8383042682618947231
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 527146260202898411}
+    m_Modifications:
+    - target: {fileID: 4855020809996537220, guid: 350c9848476c0a44389b5fb0e61def97, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855020809996537220, guid: 350c9848476c0a44389b5fb0e61def97, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855020809996537220, guid: 350c9848476c0a44389b5fb0e61def97, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855020809996537220, guid: 350c9848476c0a44389b5fb0e61def97, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855020809996537220, guid: 350c9848476c0a44389b5fb0e61def97, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855020809996537220, guid: 350c9848476c0a44389b5fb0e61def97, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855020809996537220, guid: 350c9848476c0a44389b5fb0e61def97, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9396927
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855020809996537220, guid: 350c9848476c0a44389b5fb0e61def97, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855020809996537220, guid: 350c9848476c0a44389b5fb0e61def97, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.3420201
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855020809996537220, guid: 350c9848476c0a44389b5fb0e61def97, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855020809996537220, guid: 350c9848476c0a44389b5fb0e61def97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855020809996537220, guid: 350c9848476c0a44389b5fb0e61def97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855020809996537220, guid: 350c9848476c0a44389b5fb0e61def97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548545631852892622, guid: 350c9848476c0a44389b5fb0e61def97, type: 3}
+      propertyPath: m_Name
+      value: Island Small 42 Cnc
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 350c9848476c0a44389b5fb0e61def97, type: 3}
+--- !u!4 &3978634861698722587 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4855020809996537220, guid: 350c9848476c0a44389b5fb0e61def97, type: 3}
+  m_PrefabInstance: {fileID: 8383042682618947231}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9087760378985521384
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 527146260202898411}
+    m_Modifications:
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7660445
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6427876
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5337195764711048144, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+      propertyPath: m_Name
+      value: Island Tiny 39 Cnc
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+--- !u!4 &8865127806121677702 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 367455889514247022, guid: 741b8d683dd97474b9d56950a4c8020e, type: 3}
+  m_PrefabInstance: {fileID: 9087760378985521384}
+  m_PrefabAsset: {fileID: 0}

@@ -53,26 +53,19 @@ public class Torch : Weapon
             if (flameCharge <= Mathf.Epsilon)
             {
                 flameCharge = 0f;
-                Disable();
+                DroppedByAgent();
             }
         }
     }
 
-    public override void Enable(Agent owner)
+    public override void PickedUpByAgent(Agent owner)
     {
         this.owner = owner;
     }
 
-    public override void Disable()
+    public override void DroppedByAgent()
     {
         owner = null;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (GameSettings.Instance.playerWeaponLayer.Contains(other.gameObject))
-        {
-        }
     }
 
     public void FullyRecharge()
@@ -91,5 +84,10 @@ public class Torch : Weapon
     {
         base.Interact(player);
         player.PickUpWeapon(this);
+    }
+
+    public override void HitsCollider(Collider hitCollider)
+    {
+        base.HitsCollider(hitCollider);
     }
 }

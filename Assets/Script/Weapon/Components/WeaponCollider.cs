@@ -1,24 +1,33 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class WeaponCollider : MonoBehaviour
 {
-    private Agent owner;
+    [SerializeField]
+    private Collider damageCollider;
 
     private Weapon weapon;
 
+    public event Action OnTrigger;
+
+    public void Init(Weapon weapon)
+    {
+        this.weapon = weapon;
+    }
+
+    public void Enable()
+    {
+        damageCollider.enabled = true;
+    }
+
+    public void Disable()
+    {
+        damageCollider.enabled = true;
+    }
 
 
     private void OnTriggerEnter(Collider other)
     {
-        if (GameSettings.Instance.interactableLayer.Contains(other.gameObject))
-        {
-            Debug.Log($"{owner.name}'s weapon hits {other.name}");
-            //var interactor = other.GetComponent<DamageReceiver>();
-
-            //if (interactor != null && interactor.Owner != owner)
-            //{
-            //    interactor.ReceiveDamage(owner, weapon.AttackDamage);
-            //}
-        }
+        weapon.HitsCollider(other);
     }
 }
