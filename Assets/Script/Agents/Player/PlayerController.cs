@@ -20,19 +20,14 @@ public class PlayerController : Agent
 
     [Header("Movement")]
     [SerializeField]
-    private FirstPersonMovement playerMove;
-
-    [SerializeField]
-    private FirstPersonLook playerLook;
-
-
-    [SerializeField]
     private Transform repsawnPoint;
 
     float cooldownTimer;
     int essence;
     AbilityManager abiilties;
     PlayerMode state;
+
+    Interactable collidingInteractable;
 
     const float bottomBound = -70f;
     public int HP { get; private set; }
@@ -66,36 +61,18 @@ public class PlayerController : Agent
         //    abiilties.SpawnCloud();
         //}
 
+        if (collidingInteractable != null 
+            && collidingInteractable.IsInteractable 
+            && Input.GetKeyDown(KeyCode.E))
+        {
+            collidingInteractable.Interact(this);
+        }
+
         if (transform.position.y < bottomBound)
         {
             transform.position = repsawnPoint.position;
         }
     }
-
-    #region Airplane
-
-    public void EnterPlane(Plane plane)
-    {
-        playerMove.Disable();
-        state = PlayerMode.Plane;
-        //transform.position = plane.cockpit.position;
-        //transform.parent = plane.cockpit.parent;
-
-        //plane.PlayerEnters(this);
-    }
-
-    public void ExitPlane()
-    {
-        playerMove.Enable();
-        state = PlayerMode.Walk;
-
-        transform.parent = null;
-        transform.rotation = Quaternion.Euler(0f, transform.rotation.eulerAngles.y, 0f);
-
-    }
-
-    #endregion
-
 
     #region Item interaction
 
@@ -118,6 +95,7 @@ public class PlayerController : Agent
         if (IsInteractable(other))
         {
             var interactable = other.GetComponent<Interactable>();
+            collidingInteractable = interactable;
 
             if (interactable != null)
             {
@@ -125,6 +103,27 @@ public class PlayerController : Agent
             }
         }
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (IsInteractable(other))
+        {
+            var interactable = other.GetComponent<Interactable>();
+            ExitsCollidingWithInteractable(interactable);
+        }
+    }
+
+    private void ExitsCollidingWithInteractable(Interactable interactable)
+    {
+        if (collidingInteractable != null && collidingInteractable == interactable)
+        {
+            interactable = null;
+        }
+    }
+
+    #endregion
+
+    #region Interaction with specific objects
 
     public override void CollectEssence()
     {

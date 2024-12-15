@@ -2,14 +2,12 @@
 
 public class FirstPersonLook : MonoBehaviour
 {
-    [SerializeField]
-    Transform character;
+    public Transform character;
     public float sensitivity = 2;
     public float smoothing = 1.5f;
 
     Vector2 velocity;
     Vector2 frameVelocity;
-
 
     void Reset()
     {
@@ -24,6 +22,11 @@ public class FirstPersonLook : MonoBehaviour
     }
 
     void Update()
+    {
+        FirstPersonLookUpdate();
+    }
+
+    void FirstPersonLookUpdate()
     {
         // Get smooth velocity.
         Vector2 mouseDelta = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class FirstPersonMovement : MonoBehaviour
+public class FirstPersonMovement : PlayerMovement
 {
     [Header("References")]
     [SerializeField]
@@ -29,8 +29,6 @@ public class FirstPersonMovement : MonoBehaviour
 
     private MonoBehaviour[] movementComponents;
 
-    public bool IsRunning { get; private set; }
-
     /// <summary> Functions to override movement speed. Will use the last added override. </summary>
     public List<System.Func<float>> speedOverrides = new List<System.Func<float>>();
 
@@ -55,7 +53,8 @@ public class FirstPersonMovement : MonoBehaviour
 
         Vector2 targetVelocity = new Vector2(x * targetMovingSpeed, z * targetMovingSpeed);
 
-        rb.velocity = transform.rotation * new Vector3(targetVelocity.x, rb.velocity.y, targetVelocity.y);
+        rb.velocity = transform.rotation 
+            * new Vector3(targetVelocity.x, rb.velocity.y, targetVelocity.y);
         meshAnimator.SetFloat("X", x);
         meshAnimator.SetFloat("Z", z);
     }
