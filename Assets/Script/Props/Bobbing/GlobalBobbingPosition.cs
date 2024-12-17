@@ -2,11 +2,8 @@
 
 public class GlobalBobbingPosition : MonoBehaviour
 {
-    private static Vector3 position = Vector3.zero;
-    public static Vector3 Position => position;
-
-    private static Quaternion rotation = Quaternion.identity;
-    public static Quaternion Rotation => rotation;
+    public static Vector3 Position { get; private set; } = Vector3.zero;
+    public static Quaternion Rotation { get; private set; } = Quaternion.identity;
 
     public float sinValue;
     public float normalizedValue;
@@ -31,10 +28,12 @@ public class GlobalBobbingPosition : MonoBehaviour
         var sin = Mathf.Sin(timer);
 
         // Rotating
-        rotation = Quaternion.Euler(0f, timer * rotatingAmount * 360, 0f);
+        Rotation = Quaternion.Euler(0f, timer * rotatingAmount * 360, 0f);
         // Bobbing
 
 
-        position.y = sin * bobMagnitude;
+        var pos = Position;
+        pos.y = sin * bobMagnitude;
+        Position = pos;
     }
 }

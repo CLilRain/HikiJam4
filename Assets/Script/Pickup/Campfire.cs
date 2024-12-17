@@ -13,20 +13,18 @@ public class Campfire : Interactable
         particle.Play();
     }
 
-    public override void Interact(Agent player)
+    public override bool TryInteract(Agent player)
     {
-        base.Interact(player);
-        PlayerController mainPlayer = (PlayerController)player;
-
-        if (mainPlayer != null)
+        if (IsInteractable)
         {
-            mainPlayer.InteractsWithCampfire();
-        }
-    }
+            PlayerController mainPlayer = (PlayerController)player;
 
-    public override void OnCollision(Agent player)
-    {
-        base.OnCollision(player);
-        Interact(player);
+            if (mainPlayer != null)
+            {
+                mainPlayer.InteractsWithCampfire();
+            }
+        }
+
+        return base.TryInteract(player);
     }
 }

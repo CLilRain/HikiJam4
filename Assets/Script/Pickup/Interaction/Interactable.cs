@@ -1,12 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-public enum InteractableTypes
-{
-    Pickup,
-    Weapon,
-    Environment,
-}
+
 
 [RequireComponent(typeof(Collider))]
 public abstract class Interactable : MonoBehaviour
@@ -14,24 +9,37 @@ public abstract class Interactable : MonoBehaviour
     [SerializeField]
     protected string objectName = "UnAssignedName";
 
+    [SerializeField]
+    protected InteractableTypes interactableType;
+
     protected Collider interactionDetectorCollider;
 
     // Event is used when an interactable object cannot neatly inherit from this class.
     //protected bool HasSubscriber => OnInteraction != null;
     //public event Action<Agent> OnInteraction;
 
-    public bool IsInteractable { get; private set; } = true;
-    public InteractableTypes GetInteractableType() => InteractableTypes.Pickup;
+    public string ObjectName => objectName;
+    public InteractableTypes GetInteractableType() => interactableType;
+
+    public bool IsInteractable { get; protected set; } = true;
 
     protected virtual void Awake()
     {
         interactionDetectorCollider = GetComponent<Collider>();
     }
 
-    public virtual void Interact(Agent player)
+    public virtual bool TryInteract(Agent player)
     {
-        Debug.Log($"{player.name} interacted with {objectName}");
-      
+        if (IsInteractable)
+        {
+            Debug.Log($"<color=green>{player.name} interacted with {objectName}</color>");
+            DisableInteraction();
+            return true;
+        }
+
+        Debug.Log($"<color=red>{player.name} cannot interact with disabled {objectName}</color>");
+
+        return false;
     }
 
     public virtual void OnCollision(Agent player)
@@ -39,20 +47,15 @@ public abstract class Interactable : MonoBehaviour
         Debug.Log($"{player.name} collide with {objectName}");
     }
 
-    public virtual void EnablePickupInteraction()
+    public virtual void EnableInteraction()
     {
         IsInteractable = true;
         interactionDetectorCollider.enabled = true;
     }
 
-    public virtual void DisablePickupInteraction()
+    public virtual void DisableInteraction()
     {
         IsInteractable = false;
         interactionDetectorCollider.enabled = false;
-    }
-
-    public virtual void OnDetection()
-    {
-        UIManager.Instance.SetDetectedInfo(objectName);
     }
 }

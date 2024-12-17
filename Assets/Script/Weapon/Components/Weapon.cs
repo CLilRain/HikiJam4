@@ -18,21 +18,21 @@ public abstract class Weapon : Interactable
         damageCollider.Init(this);
     }
 
-    // Pickup
-    public virtual void OnPickUp(Agent owner)
+    public override bool TryInteract(Agent player)
     {
-        this.owner = owner;
+        if (IsInteractable)
+        {
+            player.PickUpWeapon(this);
+            owner = player;
+        }
 
-        // TODO: Change gameobject layer to weapons layer
-
-        DisablePickupInteraction();
-        //EnableEffect();
+        return base.TryInteract(player);
     }
 
     public virtual void OnDrop()
     {
         owner = null;
-        EnablePickupInteraction();
+        EnableInteraction();
 
         // TODO: leaves player body
     }
@@ -46,16 +46,6 @@ public abstract class Weapon : Interactable
     public virtual void Sheeth()
     {
         damageCollider.Disable();
-    }
-
-    public virtual void PickedUpByAgent(Agent owner)
-    {
-        this.owner = owner;
-    }
-
-    public virtual void DroppedByAgent()
-    {
-        owner = null;
     }
 
     public virtual void HitsCollider(Collider hitCollider)

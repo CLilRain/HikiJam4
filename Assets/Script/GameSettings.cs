@@ -26,3 +26,12 @@ public class GameSettings : MonoBehaviour
 
     }
 }
+
+public static class InteractionExtensionMethods
+{
+    public static bool IsOnInteractableLayer(this Collider other)
+    {
+        return GameSettings.Instance.interactableLayer.Contains(other.gameObject);
+        //return (1 << other.gameObject.layer) == GameSettings.Instance.collectableLayer;
+    }
+}

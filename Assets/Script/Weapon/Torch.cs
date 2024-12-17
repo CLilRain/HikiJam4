@@ -53,19 +53,8 @@ public class Torch : Weapon
             if (flameCharge <= Mathf.Epsilon)
             {
                 flameCharge = 0f;
-                DroppedByAgent();
             }
         }
-    }
-
-    public override void PickedUpByAgent(Agent owner)
-    {
-        this.owner = owner;
-    }
-
-    public override void DroppedByAgent()
-    {
-        owner = null;
     }
 
     public void FullyRecharge()
@@ -78,12 +67,6 @@ public class Torch : Weapon
         tornMaterial.color = Color.Lerp(dimColor, litColor, percent);
 
         mainModule.startSize = Mathf.Lerp(minPfxSize, maxPfxSize, percent);
-    }
-
-    public override void Interact(Agent player)
-    {
-        base.Interact(player);
-        player.PickUpWeapon(this);
     }
 
     public override void HitsCollider(Collider hitCollider)

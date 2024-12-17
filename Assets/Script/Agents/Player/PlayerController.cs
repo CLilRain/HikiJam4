@@ -1,8 +1,4 @@
-using Palmmedia.ReportGenerator.Core;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR;
 
 public enum PlayerMode
 {
@@ -14,20 +10,16 @@ public class PlayerController : Agent
 {
     public static PlayerController instance;
 
-    [Header("Detection")]
+    [Space]
     [SerializeField]
-    private PlayerEyesDetector eyeDetector;
+    private InteractableDetector detector;
 
-    [Header("Movement")]
     [SerializeField]
     private Transform repsawnPoint;
 
     float cooldownTimer;
-    int essence;
     AbilityManager abiilties;
     PlayerMode state;
-
-    Interactable collidingInteractable;
 
     const float bottomBound = -70f;
     public int HP { get; private set; }
@@ -49,23 +41,14 @@ public class PlayerController : Agent
             return;
         }
 
-        DetectItem();
-
-        //if (Input.GetMouseButtonDown(0))
-        //{
-        //    abiilties.ShowGhostCloud();
-        //    // preview ghost
-        //}
-        //if (Input.GetMouseButtonUp(0))
-        //{
-        //    abiilties.SpawnCloud();
-        //}
-
-        if (collidingInteractable != null 
-            && collidingInteractable.IsInteractable 
-            && Input.GetKeyDown(KeyCode.E))
+        if (detector.HasDetectedObject)
         {
-            collidingInteractable.Interact(this);
+            UIManager.Instance.SetDetectedInfo(detector.DetectedObject.ObjectName);
+
+            if (Input.GetKeyDown(KeyCode.E) && detector.DetectedObject.TryInteract(this))
+            {
+                UIManager.Instance.ClearDetectedInfo();
+            }
         }
 
         if (transform.position.y < bottomBound)
@@ -76,59 +59,16 @@ public class PlayerController : Agent
 
     #region Item interaction
 
-    private void DetectItem()
+    private void OnTriggerEnter(Collider collider)
     {
-        eyeDetector.DetectItem();
-        if (eyeDetector.hasFoundObject)
+        if (collider.IsOnInteractableLayer())
         {
-            eyeDetector.foundObject.OnDetection();
-
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                eyeDetector.foundObject.Interact(this);
-            }
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (IsInteractable(other))
-        {
-            var interactable = other.GetComponent<Interactable>();
-            collidingInteractable = interactable;
-
-            if (interactable != null)
+            var interactable = collider.GetComponent<Interactable>();
+            if (interactable != null && interactable.IsInteractable)
             {
                 interactable.OnCollision(this);
             }
         }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (IsInteractable(other))
-        {
-            var interactable = other.GetComponent<Interactable>();
-            ExitsCollidingWithInteractable(interactable);
-        }
-    }
-
-    private void ExitsCollidingWithInteractable(Interactable interactable)
-    {
-        if (collidingInteractable != null && collidingInteractable == interactable)
-        {
-            interactable = null;
-        }
-    }
-
-    #endregion
-
-    #region Interaction with specific objects
-
-    public override void CollectEssence()
-    {
-        essence++;
-        UpdateCoinScore();
     }
 
     public void InteractsWithCampfire()
@@ -152,16 +92,6 @@ public class PlayerController : Agent
         }
     }
 
-    private void UpdateCoinScore()
-    {
-        UIManager.Instance.SetEssence(essence);
-    }
-
-    private bool IsInteractable(Collider other)
-    {
-        return GameSettings.Instance.interactableLayer.Contains(other.gameObject);
-        //return (1 << other.gameObject.layer) == GameSettings.Instance.collectableLayer;
-    }
 
     #endregion
 }

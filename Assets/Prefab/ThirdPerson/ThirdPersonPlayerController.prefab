@@ -1428,7 +1428,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentName: Hiki Worth V
   playerHand: {fileID: 2806067893859379100}
-  eyeDetector: {fileID: 2814692608963546500}
+  detector: {fileID: 7640216485717555224}
   repsawnPoint: {fileID: 0}
 --- !u!114 &2448426143172460282
 MonoBehaviour:
@@ -1574,7 +1574,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4194694294114443177}
-  - component: {fileID: 2814692608963546500}
+  - component: {fileID: 7640216485717555224}
   m_Layer: 6
   m_Name: Body
   m_TagString: Untagged
@@ -1598,7 +1598,7 @@ Transform:
   - {fileID: 3055187392552326795}
   m_Father: {fileID: 687353075270313865}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2814692608963546500
+--- !u!114 &7640216485717555224
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1607,13 +1607,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8952717435438189270}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4984425c7afd7a4f874aaa64f796333, type: 3}
+  m_Script: {fileID: 11500000, guid: 314d8bde95757cb44937544e6724b135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   layerMask:
     serializedVersion: 2
-    m_Bits: 6144
-  detectionRange: 5
+    m_Bits: 2048
 --- !u!1 &9075317655652035319
 GameObject:
   m_ObjectHideFlags: 0

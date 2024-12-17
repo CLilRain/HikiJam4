@@ -5028,7 +5028,7 @@ GameObject:
   - component: {fileID: 6352485800786081993}
   - component: {fileID: 353460546712211886}
   - component: {fileID: 310980816866042964}
-  m_Layer: 11
+  m_Layer: 13
   m_Name: HitCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
