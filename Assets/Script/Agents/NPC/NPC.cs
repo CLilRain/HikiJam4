@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class NPC : Interactable
 {
-    public Animator animator;
-
-    public ItemTypes questItem;
-
     public static int PlayHashID = Animator.StringToHash("Play");
     public static int StopHashID = Animator.StringToHash("Stop");
 
+    public Animator animator;
+    public ItemTypes questItem;
+
+    [SerializeField]
+    private DialogueSet startingDialogue;
+
+    Agent agent;
     bool inConversation;
     bool givenQuestItem;
 
@@ -25,23 +28,36 @@ public class NPC : Interactable
             StartConversation();
         }
 
-        inConversation = !inConversation;
     }
 
     private void StartConversation()
     {
-        animator.SetTrigger(PlayHashID);
+        if (!UIManager.Instance.InDialogue)
+        {
+            inConversation = true;
+            animator.SetTrigger(PlayHashID);
+            
+
+        }
+
+        if (agent)
+        {
+
+        }
     }
 
     private void StopConversation()
     {
+        inConversation = false;
         animator.SetTrigger(StopHashID);
+        agent = null;
     }
 
     public override bool TryInteract(Agent agent)
     {
         if (IsInteractable)
         {
+            this.agent = agent;
             Interact();
         }
 

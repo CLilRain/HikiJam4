@@ -18,6 +18,11 @@ public class UIManager : MonoBehaviour
     public Image router;
     public Image waterPot;
     public Image riceBag;
+    
+    [Header("Essence")]
+    public DialogueManager dialogueManager;
+
+    public bool InDialogue => dialogueManager.InDialogue;
 
     private void Awake()
     {
@@ -35,18 +40,18 @@ public class UIManager : MonoBehaviour
         //essenceAnimator.Play("Bounce", 0, 0f);
     }
 
-    public void PickedUpItem(ItemTypes itemType)
+    public void UpdateItemDisplay(ItemTypes itemType, bool isShown)
     {
         switch (itemType)
         {
             case ItemTypes.Router:
-                router.enabled = true;
+                router.enabled = isShown;
                 break;
             case ItemTypes.WaterPot:
-                waterPot.enabled = true;
+                waterPot.enabled = isShown;
                 break;
             case ItemTypes.RiceBag:
-                riceBag.enabled = true;
+                riceBag.enabled = isShown;
                 break;
             default:
                 break;
@@ -63,5 +68,14 @@ public class UIManager : MonoBehaviour
     {
         detectedBacground.enabled = false;
         detectedLabel.text = string.Empty;
+    }
+
+    public void SetDialogue(DialogueSet dialogue)
+    {
+        if (!dialogueManager.InDialogue)
+        {
+            ClearDetectedInfo();
+            dialogueManager.StartDialogue(dialogue);
+        }
     }
 }

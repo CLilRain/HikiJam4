@@ -10,8 +10,6 @@ public abstract class Agent : MonoBehaviour
     [SerializeField]
     protected PlayerHand playerHand;
 
-    protected int essence;
-
     public virtual void ReceiveDamage(Agent attacker, int damage) {}
 
     public void PickUpWeapon(Weapon weapon)
@@ -26,16 +24,25 @@ public abstract class Agent : MonoBehaviour
         switch (itemType)
         {
             case ItemTypes.Essence:
-                essence++;
-                UIManager.Instance.SetEssence(essence);
+                PlayerData.Essence++;
+                UIManager.Instance.SetEssence(PlayerData.Essence);
                 break;
+
             case ItemTypes.Router:
+                PlayerData.HasRouter = true;
+                UIManager.Instance.UpdateItemDisplay(itemType, true);
+                break;
+
             case ItemTypes.WaterPot:
+                PlayerData.HasWaterPot = true;
+                UIManager.Instance.UpdateItemDisplay(itemType, true);
+                break;
+
             case ItemTypes.RiceBag:
             default:
-                UIManager.Instance.PickedUpItem(itemType);
+                UIManager.Instance.UpdateItemDisplay(itemType, true);
+                PlayerData.HasRiceBag = true;
                 break;
         }
-
     }
 }

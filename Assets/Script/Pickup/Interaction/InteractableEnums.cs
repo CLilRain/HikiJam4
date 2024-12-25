@@ -13,6 +13,7 @@ public enum WeaponTypes
 
 public enum ItemTypes
 {
+    None,
     Essence,
 
     Router,
