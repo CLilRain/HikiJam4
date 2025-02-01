@@ -248,3 +248,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: Essence
+  interactableType: 0
+  itemType: 1

@@ -1,8 +1,6 @@
 ﻿using System;
 using UnityEngine;
 
-
-
 [RequireComponent(typeof(Collider))]
 public abstract class Interactable : MonoBehaviour
 {
@@ -28,18 +26,23 @@ public abstract class Interactable : MonoBehaviour
         interactionDetectorCollider = GetComponent<Collider>();
     }
 
-    public virtual bool TryInteract(Agent player)
+    public virtual bool TryInitiateInteraction(Agent player)
     {
-        if (IsInteractable)
+        if (IsInteractable && GameManager.Instance.GameState == GameState.Playing)
         {
             Debug.Log($"<color=green>{player.name} interacted with {objectName}</color>");
-            DisableInteraction();
+            Interact(player);
             return true;
         }
 
-        Debug.Log($"<color=red>{player.name} cannot interact with disabled {objectName}</color>");
+        //Debug.Log($"<color=red>{player.name} cannot interact with disabled object {objectName}</color>");
 
         return false;
+    }
+
+    protected virtual void Interact(Agent player)
+    {
+        DisableInteraction();
     }
 
     public virtual void OnCollision(Agent player)

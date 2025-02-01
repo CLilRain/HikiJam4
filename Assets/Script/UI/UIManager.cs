@@ -20,9 +20,7 @@ public class UIManager : MonoBehaviour
     public Image riceBag;
     
     [Header("Essence")]
-    public DialogueManager dialogueManager;
-
-    public bool InDialogue => dialogueManager.InDialogue;
+    public DialogueUI dialogueUI;
 
     private void Awake()
     {
@@ -60,8 +58,11 @@ public class UIManager : MonoBehaviour
 
     public void SetDetectedInfo(string objectName)
     {
-        detectedBacground.enabled = true;
-        detectedLabel.text = objectName;
+        if (!GameManager.InConversation)
+        {
+            detectedBacground.enabled = true;
+            detectedLabel.text = objectName;
+        }
     }   
     
     public void ClearDetectedInfo()
@@ -70,12 +71,19 @@ public class UIManager : MonoBehaviour
         detectedLabel.text = string.Empty;
     }
 
-    public void SetDialogue(DialogueSet dialogue)
+    public void ShowDialogue(string NPCName, string line)
     {
-        if (!dialogueManager.InDialogue)
+        if (GameManager.InConversation)
         {
+            Debug.Log("UIManager.ShowDialogue");
+
             ClearDetectedInfo();
-            dialogueManager.StartDialogue(dialogue);
+            dialogueUI.ShowDialogue(NPCName, line);
         }
+    }
+
+    public void HideDialogue()
+    {
+        dialogueUI.HideDialogue();
     }
 }

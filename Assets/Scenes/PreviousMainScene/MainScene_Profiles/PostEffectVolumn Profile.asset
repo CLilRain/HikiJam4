@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adb84e30e02715445aeb9959894e3b4d, type: 3}
   m_Name: ColorGrading
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   enabled:
     overrideState: 1
     value: 1
@@ -52,8 +52,8 @@ MonoBehaviour:
     overrideState: 0
     value: 1
   temperature:
-    overrideState: 0
-    value: 43.1
+    overrideState: 1
+    value: 13.8
   tint:
     overrideState: 0
     value: 20.4
@@ -65,7 +65,7 @@ MonoBehaviour:
     value: 0
   saturation:
     overrideState: 1
-    value: -100
+    value: -7.1
   brightness:
     overrideState: 0
     value: 0
@@ -103,13 +103,13 @@ MonoBehaviour:
     overrideState: 0
     value: 100
   lift:
-    overrideState: 1
-    value: {x: 1, y: 1, z: 1, w: 0}
+    overrideState: 0
+    value: {x: 0.81695664, y: 0.8519413, z: 1, w: 0}
   gamma:
-    overrideState: 1
-    value: {x: 1, y: 1, z: 1, w: 0}
+    overrideState: 0
+    value: {x: 0.57056063, y: 0.6282594, z: 1, w: 0}
   gain:
-    overrideState: 1
+    overrideState: 0
     value: {x: 1, y: 1, z: 1, w: 0}
   masterCurve:
     overrideState: 0
@@ -1424,6 +1424,7 @@ MonoBehaviour:
   - {fileID: 1256285319756330741}
   - {fileID: -5517260785938306870}
   - {fileID: -2197603319096861043}
+  - {fileID: 3810015589109978517}
 --- !u!114 &1256285319756330741
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1471,3 +1472,25 @@ MonoBehaviour:
   dirtIntensity:
     overrideState: 0
     value: 0
+--- !u!114 &3810015589109978517
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94fcd11afffcb142908bfcb1e261fba, type: 3}
+  m_Name: MotionBlur
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  shutterAngle:
+    overrideState: 0
+    value: 270
+  sampleCount:
+    overrideState: 0
+    value: 10

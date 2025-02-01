@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
+[DefaultExecutionOrder(-1000)]
 public class GameSettings : MonoBehaviour
 {
     public float MaxHealth = 100;
@@ -14,16 +15,6 @@ public class GameSettings : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-    }
-
-    void Start()
-    {
-
-    }
-
-    void Update()
-    {
-
     }
 }
 

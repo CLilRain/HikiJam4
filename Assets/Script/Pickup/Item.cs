@@ -6,14 +6,20 @@ public class Item : Interactable
     [SerializeField]
     public ItemTypes itemType;
 
-    public override bool TryInteract(Agent agent)
+    protected override void Interact(Agent player)
     {
-        if (IsInteractable)
+        player.PickUpItem(itemType);
+
+        switch (itemType)
         {
-            agent.PickUpItem(itemType);
-            Destroy(gameObject);
+            case ItemTypes.Essence:
+                SfxManager.Instance.PlayUIClick();
+                break;
+            default:
+                SfxManager.Instance.PlayPickupSound();
+                break;
         }
 
-        return base.TryInteract(agent);
+        Destroy(gameObject);
     }
 }

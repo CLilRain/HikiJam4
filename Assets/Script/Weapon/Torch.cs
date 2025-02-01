@@ -62,6 +62,12 @@ public class Torch : Weapon
         SetLitAmount(1f);
     }
 
+    public override bool TryInitiateInteraction(Agent player)
+    {
+        SfxManager.Instance.PlayTorchSound();
+        return base.TryInitiateInteraction(player);
+    }
+
     void SetLitAmount(float percent)
     {
         tornMaterial.color = Color.Lerp(dimColor, litColor, percent);

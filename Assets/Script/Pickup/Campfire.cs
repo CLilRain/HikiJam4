@@ -13,18 +13,14 @@ public class Campfire : Interactable
         particle.Play();
     }
 
-    public override bool TryInteract(Agent player)
+    protected override void Interact(Agent player)
     {
-        if (IsInteractable)
+        PlayerController mainPlayer = (PlayerController)player;
+
+        if (mainPlayer != null)
         {
-            PlayerController mainPlayer = (PlayerController)player;
-
-            if (mainPlayer != null)
-            {
-                mainPlayer.InteractsWithCampfire();
-            }
+            mainPlayer.InteractsWithCampfire();
+            SfxManager.Instance.PlayTorchSound();
         }
-
-        return base.TryInteract(player);
     }
 }

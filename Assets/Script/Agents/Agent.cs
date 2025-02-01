@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using UnityEditor;
 using UnityEngine;
 
 public abstract class Agent : MonoBehaviour
@@ -21,6 +22,8 @@ public abstract class Agent : MonoBehaviour
 
     public void PickUpItem(ItemTypes itemType)
     {
+        Debug.Log($"<color=yellow> Picks up item {itemType}</color>");
+
         switch (itemType)
         {
             case ItemTypes.Essence:

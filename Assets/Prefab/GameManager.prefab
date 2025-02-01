@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3496181437671190618}
   - component: {fileID: 974946207990237038}
   - component: {fileID: 3873001421756103368}
+  - component: {fileID: 1282089847313612739}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -81,10 +82,22 @@ MonoBehaviour:
   MaxHealth: 100
   interactableLayer:
     serializedVersion: 2
-    m_Bits: 14336
+    m_Bits: 10240
   playerWeaponLayer:
     serializedVersion: 2
     m_Bits: 8192
+--- !u!114 &1282089847313612739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071341258500406810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a24bc1e7fd7f2e4ea9e5415ecacdba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6255005748820076310
 GameObject:
   m_ObjectHideFlags: 0

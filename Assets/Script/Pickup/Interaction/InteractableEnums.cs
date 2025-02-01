@@ -20,3 +20,8 @@ public enum ItemTypes
     WaterPot,
     RiceBag
 }
+
+public enum Stats
+{
+    Essence
+}

@@ -18,7 +18,7 @@ public abstract class Weapon : Interactable
         damageCollider.Init(this);
     }
 
-    public override bool TryInteract(Agent player)
+    public override bool TryInitiateInteraction(Agent player)
     {
         if (IsInteractable)
         {
@@ -26,7 +26,7 @@ public abstract class Weapon : Interactable
             owner = player;
         }
 
-        return base.TryInteract(player);
+        return base.TryInitiateInteraction(player);
     }
 
     public virtual void OnDrop()

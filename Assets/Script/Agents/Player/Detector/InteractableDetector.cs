@@ -46,14 +46,14 @@ public class InteractableDetector : MonoBehaviour
                 {
                     SetInteractable(interactable);
 
-                    Debug.Log($"Detected object {hit.transform.name} ");
+                    //Debug.Log($"Detected object {hit.transform.name} ");
 
                     return true;
                 }
             }
             else
             {
-                Debug.Log($"{hit.transform.name} has no collider ");
+                //Debug.Log($"{hit.transform.name} has no collider ");
             }
         }
 
@@ -76,8 +76,5 @@ public class InteractableDetector : MonoBehaviour
         UIManager.Instance.ClearDetectedInfo();
 
         Debug.Log("Cleare detected item");
-
-        //Debug.Log($"PLAYER EXITS COLLIDER" +
-        //DetectedObject == null ? string.Empty : DetectedObject.name);
     }
 }

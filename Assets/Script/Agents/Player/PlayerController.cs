@@ -17,11 +17,13 @@ public class PlayerController : Agent
     [SerializeField]
     private Transform repsawnPoint;
 
+    [SerializeField]
+    private float bottomBound = -70f;
+
     float cooldownTimer;
     AbilityManager abiilties;
     PlayerMode state;
 
-    const float bottomBound = -70f;
     public int HP { get; private set; }
 
     private void Awake()
@@ -29,14 +31,17 @@ public class PlayerController : Agent
         instance = this;
     }
 
-    void Start()
+    private void Start()
     {
         abiilties = AbilityManager.Instance;
+
+        GoToRespawnPosition();
     }
 
-    void Update()
+    private void Update()
     {
-        if (state == PlayerMode.Plane)
+        if (!GameManager.IsInGameplayMode 
+            || state == PlayerMode.Plane)
         {
             return;
         }
@@ -45,13 +50,21 @@ public class PlayerController : Agent
         {
             UIManager.Instance.SetDetectedInfo(detector.DetectedObject.ObjectName);
 
-            if (Input.GetKeyDown(KeyCode.E) && detector.DetectedObject.TryInteract(this))
+            if (Input.GetKeyDown(KeyCode.E) && detector.DetectedObject.TryInitiateInteraction(this))
             {
                 UIManager.Instance.ClearDetectedInfo();
             }
         }
 
         if (transform.position.y < bottomBound)
+        {
+            GoToRespawnPosition();
+        }
+    }
+
+    private void GoToRespawnPosition()
+    {
+        if (repsawnPoint != null)
         {
             transform.position = repsawnPoint.position;
         }
